@@ -55,13 +55,22 @@
 
 5. **Test the SSH connection:**
     - Run the following command to test the SSH connection to GitHub:
-      ```sh
+      ```
       ssh -T git@github.com
       ```
 
     - You should see a message like:
-      ```sh
+      ```
       Hi username! You've successfully authenticated, but GitHub does not provide shell access.
       ```
 
-This confirms that your SSH key has been successfully added to your GitHub account and you can now use SSH for Git operations.
+      This confirms that your SSH key has been successfully added to your GitHub account and you can now use SSH for Git operations.
+
+6. **Authorize the SSH key for the organization:**
+    -  Visit the following URL to authorize your SSH key for the organization: https://github.com/organizations/Interseguro/settings/security
+    - Follow the instructions to authorize your SSH key.
+
+7. **(Optional) Clone a repository using SSH**
+    ```
+    git clone git@github.com:<organization>/<repository>.git
+    ```
